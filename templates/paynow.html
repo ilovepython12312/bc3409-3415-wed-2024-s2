@@ -77,6 +77,9 @@
             const contract = new web3.eth.Contract(contractABI, contractAddress)
 
             async function transfer() {
+                const accounts = await web3.eth.requestAccounts();
+                console.log(accounts[0]);
+
             }
             async function transaction() {
             }
